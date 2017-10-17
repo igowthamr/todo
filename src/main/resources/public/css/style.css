@@ -1,0 +1,23 @@
+.container-fluid {
+    margin: 0 10rem;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+.panel-group {
+    margin-bottom: 0;
+}
+
+
+
+label[data-toggle]:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+label[data-toggle].collapsed:after {
+    content: "\f067";
+}
+

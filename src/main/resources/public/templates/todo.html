@@ -1,0 +1,13 @@
+<div class="panel panel-default" ng-class="service.result">
+    <div class="panel-heading">
+        <h2 class="panel-title action">
+            <label>{{service.name}}</label>
+            <button class="btn btn-primary" ng-click="run()">Run</button>
+        </h2>
+    </div>
+    <div class="panel-body">
+        <section class="panel-group" ng-repeat="todo in service.testSuites" ng-controller="testSuiteController">
+            <div class="panel" ng-class="testSuite.result" ng-include="'templates/testsuite.html'"></div>
+        </section>
+    </div>
+</div>
